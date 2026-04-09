@@ -5,7 +5,7 @@ def create_tables():
     
     if connection is None:
         print("Failed to connect to database")
-        return
+        return None
 
     # 1. Users Table
     cursor.execute("""
